@@ -3,7 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	feetToMeters(15)
+	fmt.Print("Enter a number in feet: ")
+	var userInput float64
+	fmt.Scanf("%f", &userInput)
+	feetToMeters(userInput)
 }
 func feetToMeters(feet float64) {
 	m := feet * 0.3048
