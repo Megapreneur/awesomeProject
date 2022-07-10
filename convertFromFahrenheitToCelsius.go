@@ -3,7 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	fahrenheitToCelsius(70)
+	fmt.Print("Enter a number in fahrenheit: ")
+	var userInput float64
+	fmt.Scanf("%f", &userInput)
+	fahrenheitToCelsius(userInput)
 
 }
 func fahrenheitToCelsius(F float64) {
